@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My New Test</title>
+	<meta charset="utf-8">
+	<meta description="Test, resume">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="floatbox side grayLeft"></div>
+  <div class="floatbox middle creme">
+	  <nav>
+	    <ul>
+	      <label for="home_id"/>
+	      <li id="home_id">
+	        <a class="smooth" href="#">
+	          Home
+	        </a>
+	      </li>
+	      <label for=about_id"/>
+	      <li id="about_id">
+	        <a href="#">
+	          About
+	        </a>
+	      </li>
+	      <label for=contact_id"/>
+	      <li id="contact_id">
+	        <a href="#">
+	          Contact Us
+	        </a>
+	      </li>
+	      <label for=explore_id"/>
+	      <li id="explore_id">
+	        <a href="#">
+	          Explore
+	        </a>
+	      </li>
+	    </ul>
+	  </nav>
+	  <section class="contacts">
+	  	<p>
+	  		<h1>Contact Info</h1>
+	  		<p><strong>Name:</strong> Keith Lee</p>
+	  		<p><strong>Phone:</strong> 310-890-0373</p>
+	  		<p><strong>Email:</strong> klee@pellago.com</p>
+	  		<p><strong>Address:</strong> 2110 Woodwind Dr., Encinitas CA 92024</p>
+	  	</p>
+	  	<hr>
+	  </section>
+	  <section class="inputs">
+	  	<p>
+	  		<form action="*" method="post">
+	  			<p>
+	  			<label for="salary_id">Desired Annual Salary:
+	  				<input type="text" id="salary_id" name="salary"/>
+	  			</label>
+	  			<p/>
+	  			<p>
+	  			<label for="education_id">Education: 
+	  				<input type="text" name="education" id="education_id" list="educationLevel"/>
+	  				<datalist id="educationLevel">
+	  					<option value="High School"></option>
+	  					<option value="Bachelors Degree"></option>
+	  					<option value="Masters Degree"></option>
+	  					<option value="PhD"></option>
+	  				</datalist>
+	  			</label>
+	  			<p/>
+	  			<p>
+	  			<label for="comments_id">Comments:
+	  				<textarea class="comments" name="comments" id="comments_id" placeholder="Write comments here">	  					
+	  				</textarea>
+	  			</label>
+	  			<p/>
+	  			<input type="submit" value="Get Options">
+	  			
+	  		</form>
+	  	</p>
+	  </section> 	
+  </div>
+  <div class="floatbox side grayRight"></div>
+  <footer>
+  	<p><small>Copyright &copy; 2017</small></p>
+  </footer>
+</body>
+</html>
