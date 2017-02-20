@@ -61,8 +61,41 @@ a:focus {
   clear: both;
   margin: 1em;
 }
-.inputs {
+.centered_nav {
+  margin: 1em auto;
+}
+.formInputs {
+  clear: both;
   margin: 1em;
+}
+.inputs {
+  clear: both;
+  margin: 1em 0;
+  width: 100vh;
+}
+#educationLevel {
+  padding-bottom: 0;
+}
+label.labelAligned {
+  display: block;
+  float: left;
+  width: 8em;
+  text-align: right;
+  margin-right: 0.5em;
+  margin-left: 0;
+  margin-bottom: 0.5em;
+}
+input.aligned {
+  width: 30em;
+  height: 2em;
+  margin-bottom: 0.5em;
+}
+.comments {
+  width: 30em;
+  margin-bottom: 0.5em;
+}
+.clear {
+  clear: both;
 }
 footer {
   position: absolute;
@@ -70,6 +103,7 @@ footer {
   text-align: center;
   width: 100%;
 }
-#educationLevel {
-  padding-bottom: 1em;
+#skills {
+  clear: both;
+  margin: 1em;
 }
