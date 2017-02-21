@@ -61,8 +61,15 @@ a:focus {
   clear: both;
   margin: 1em;
 }
+#contact_info_id {
+  font-family: 'Oswald', sans-serif;
+}
+strong {
+  font-family: 'Sansita', sans-serif;
+}
 .centered_nav {
   margin: 1em auto;
+  font-family: 'Ubuntu', sans-serif;
 }
 .formInputs {
   clear: both;
@@ -84,6 +91,10 @@ label.labelAligned {
   margin-right: 0.5em;
   margin-left: 0;
   margin-bottom: 0.5em;
+  font-family: 'Sansita', sans-serif;
+}
+label.selection {
+  font-family: 'Architects Daughter', cursive;
 }
 input.aligned {
   width: 30em;

@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta description="Test, resume">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Oswald|Sansita|Ubuntu" rel="stylesheet"> 
 </head>
 <body>
   <div class="floatbox side grayLeft"></div>
@@ -39,7 +40,7 @@
 	  </nav>
 	  <section class="contacts">
 	  	<p>
-	  		<h1>Contact Info</h1>
+	  		<h1 id="contact_info_id">Contact Info</h1>
 	  		<p><strong>Name:</strong> Keith Lee</p>
 	  		<p><strong>Phone:</strong> 310-890-0373</p>
 	  		<p><strong>Email:</strong> klee@pellago.com</p>
@@ -81,54 +82,57 @@
 	  	<strong>Programming Languages</strong>
 	  		<ul>
 	  			<li>
-	  				<label>
-	  					<input type="checkbox" name="Languages" value="Java">
-	  						Java
-	  					</input
-	  				</label>
+	  				<label class="selection">Java</label>
+	  				<input type="checkbox" name="Languages" value="Java">
+	  				</input>
 	  			</li>
 	  			<li>
-	  				<label>
-	  					<input type="checkbox" name="Languages" value="Swift">
-	  						Swift
-	  					</input>
-	  				</label>
+	  				<label class="selection">Swift</label>
+	  				<input type="checkbox" name="Languages" value="Swift">
+	  				</input>
 	  			</li>
 	  			<li>
-	  				<label>
-	  					<input type="checkbox" name="Languages" value="C">
-	  						C
-	  					</input>
-	  				</label>
+	  				<label class="selection">C Family</label>
+	  				<input type="checkbox" name="Languages" value="C">
+	  				</input>
 	  			</li>
 	  		</ul>
 	  		<p style="clear: both;">
 		  		<strong>Web Design</strong>
 		  		<ul>
 		  			<li>
-		  				<label>
-		  					<input type="checkbox" name="Languages" value="HTML">
-		  						HTML
-		  					</input
-		  				</label>
+		  				<label class="selection">HTML</label>
+		  				<input type="checkbox" name="Languages" value="HTML">
+		  				</input>
 		  			</li>
 		  			<li>
-		  				<label>
-		  					<input type="checkbox" name="Languages" value="CSS">
-		  						CSS
-		  					</input>
-		  				</label>
+		  				<label class="selection">CSS</label>
+		  				<input type="checkbox" name="Languages" value="CSS">
+		  				</input>
 		  			</li>
 		  			<li>
-		  				<label>
-		  					<input type="checkbox" name="Languages" value="JavaScrip">
-		  						JavaScript
-		  					</input>
-		  				</label>
+		  				<label class="selection">JavaScript
+		  				<input type="checkbox" name="Languages" value="JavaScript">
+		  				</input>
+		  			</li>
+		  			<li>
+		  				<label class="selection">jQuery
+		  				<input type="checkbox" name="Languages" value="jQuery">
+		  				</input>
 		  			</li>
 		  		</ul>	  			
 	  		</p>
 	  </fieldset>	
+	  <fieldset id="skills">
+	  	<legend>Work Requirements</legend>
+	  	<strong>Travel</strong>
+	  	<select name="Travel">
+	  		<option value="No_Travel">Work From Home</option>
+	  		<option value="Travel_25">25% Travel</option>
+	  		<option value="Travel_50">50% Travel</option>
+	  		<option value="Travel_100">Road Warrior</option>
+	  	</select>
+	  </fieldset>
   </div>
   <div class="floatbox side grayRight"></div>
   <footer>
