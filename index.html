@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My New Test</title>
+	<title>My CV</title>
 	<meta charset="utf-8">
 	<meta description="Test, resume">
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -12,52 +12,53 @@
   <div class="floatbox middle creme">
 	  <nav>
 	    <ul class="centered_nav">
-	      <label for="home_id"/>
-	      <li id="home_id">
+	      <li class="inline" id="home_id">
 	        <a class="smooth" href="#">
 	          Home
 	        </a>
 	      </li>
-	      <label for=about_id"/>
-	      <li id="about_id">
+	      <li class="inline" id="about_id">
 	        <a href="#">
 	          About
 	        </a>
 	      </li>
-	      <label for=contact_id"/>
-	      <li id="contact_id">
+	      <li class="inline" id="contact_id">
 	        <a href="#">
 	          Contact Us
 	        </a>
 	      </li>
-	      <label for=explore_id"/>
-	      <li id="explore_id">
+	      <li class="inline" id="explore_id">
 	        <a href="#">
 	          Explore
 	        </a>
 	      </li>
 	    </ul>
 	  </nav>
-	  <section class="contacts">
-	  	<p>
-	  		<h1 id="contact_info_id">Contact Info</h1>
-	  		<p><strong>Name:</strong> Keith Lee</p>
-	  		<p><strong>Phone:</strong> 310-890-0373</p>
-	  		<p><strong>Email:</strong> klee@pellago.com</p>
-	  		<p><strong>Address:</strong> 2110 Woodwind Dr., Encinitas CA 92024</p>
-	  	</p>
-	  	<hr>
-	  </section>
-	  <section class="formInputs">
-	  	<form action="*" method="post">
+	  <header>
+ 			<h1>Curriculum Vitae</h1>
+	  </header>
+	  <fieldset class="contacts">
+	  	<legend>Contact Info</legend>
+	  	<ul class="contact_info">
+	   		<li><strong>Name:</strong> Keith Lee</li>
+	  		<li><strong>Phone:</strong> 310-890-0373</li>
+	  		<li><strong>Email:</strong> klee@pellago.com</li>
+	  		<li><strong>Address:</strong> 2110 Woodwind Dr., Encinitas CA 92024</li>
+ 			</ul>
+		</fieldset>
+		<fieldset class="skills">
+			<legend>General</legend>
 	  		<ul class="inputs">
-	  			<li>
-			 			<label class="labelAligned" for="salary_id">Desired Salary:</label>
-			 			<input class="aligned" type="text" id="salary_id" name="salary"/>
+	  			<li class="clear">
+			 			<strong>Desired Salary:</strong>
+			 			<br>
+			 			<input class="formInputs" type="text" id="salary_id" name="salary"></input>
 	  			</li>
-	  			<li>
-			 			<label class="labelAligned" for="education_id">Education: </label>
-			 			<input class="aligned" type="text" name="education" id="education_id" list="educationLevel"/>
+	  			<li class="clear">
+			 			<strong>Education:</strong>
+			 			<br>
+			 			<input class="formInputs" type="text" name="education" id="education_id" list="educationLevel">
+			 			</input>
 			  		<datalist id="educationLevel">
 			  			<option value="High School"></option>
 			  			<option value="Bachelors Degree"></option>
@@ -65,74 +66,90 @@
 			  			<option value="PhD"></option>
 			  		</datalist>
 	  			</li>
-	  			<li>
-			  		<label class="labelAligned" for="comments_id">Comments: </label>
-			  		<textarea class="comments" name="comments" id="comments_id" placeholder="Write comments here">	  					
+	  			<li class="clear">
+			  		<strong>Comments:</strong>
+			  		<br>
+			  		<textarea class="formInputs" name="comments" id="comments_id" placeholder="Write comments here">			
 			  		</textarea>
 	  			</li>
-	  			<li class="clear">
-	  				<label class="labelAligned"></label>
-	  				<input type="submit" value="Get Options">
-	  			</li>
 	  		</ul>	  			
+		</fieldset>
+	  <section class="formInputs">
+	  	<form action="*" method="post">
 	  	</form>
 	  </section>
-	  <fieldset id="skills">
+	  <fieldset class="skills">
 	  	<legend>Technical Skills</legend>
 	  	<strong>Programming Languages</strong>
-	  		<ul>
-	  			<li>
-	  				<label class="selection">Java</label>
-	  				<input type="checkbox" name="Languages" value="Java">
-	  				</input>
-	  			</li>
-	  			<li>
-	  				<label class="selection">Swift</label>
-	  				<input type="checkbox" name="Languages" value="Swift">
-	  				</input>
-	  			</li>
-	  			<li>
-	  				<label class="selection">C Family</label>
-	  				<input type="checkbox" name="Languages" value="C">
-	  				</input>
-	  			</li>
-	  		</ul>
-	  		<p style="clear: both;">
-		  		<strong>Web Design</strong>
-		  		<ul>
-		  			<li>
-		  				<label class="selection">HTML</label>
-		  				<input type="checkbox" name="Languages" value="HTML">
-		  				</input>
-		  			</li>
-		  			<li>
-		  				<label class="selection">CSS</label>
-		  				<input type="checkbox" name="Languages" value="CSS">
-		  				</input>
-		  			</li>
-		  			<li>
-		  				<label class="selection">JavaScript
-		  				<input type="checkbox" name="Languages" value="JavaScript">
-		  				</input>
-		  			</li>
-		  			<li>
-		  				<label class="selection">jQuery
-		  				<input type="checkbox" name="Languages" value="jQuery">
-		  				</input>
-		  			</li>
-		  		</ul>	  			
-	  		</p>
+	  	<ul>
+	  		<li>
+	  			<label class="selection">Java</label>
+	  			<input class="work" type="checkbox" name="Languages" value="Java">
+	  			</input>
+	  		</li>
+	  		<li>
+	  			<label class="selection">Swift</label>
+	  			<input class="work" type="checkbox" name="Languages" value="Swift">
+	  			</input>
+	  		</li>
+	  		<li>
+	  			<label class="selection">C Family</label>
+	  			<input class="work" type="checkbox" name="Languages" value="C">
+	  			</input>
+	  		</li>
+	  	</ul>
+	  	<div style="clear: both;">
+		  	<strong>Web Design</strong>
+		  	<ul>
+		  		<li>
+		  			<label class="selection">HTML</label>
+		  			<input class="work" type="checkbox" name="Languages" value="HTML">
+		  			</input>
+		  		</li>
+		  		<li>
+		  			<label class="selection">CSS</label>
+		  			<input class="work" type="checkbox" name="Languages" value="CSS">
+		  			</input>
+		  		</li>
+		  		<li>
+		  			<label class="selection">JavaScript
+		  			<input class="work" type="checkbox" name="Languages" value="JavaScript">
+		  			</input>
+		  		</li>
+		  		<li>
+		  			<label class="selection">jQuery
+		  			<input class="work" type="checkbox" name="Languages" value="jQuery">
+		  			</input>
+		  		</li>
+		  	</ul>	  			
+	  	</div>
 	  </fieldset>	
-	  <fieldset id="skills">
+	  <fieldset class="skills">
 	  	<legend>Work Requirements</legend>
-	  	<strong>Travel</strong>
-	  	<select name="Travel">
+	  	<strong>Travel&nbsp;</strong>
+	  	<select class="work" name="Travel">
 	  		<option value="No_Travel">Work From Home</option>
 	  		<option value="Travel_25">25% Travel</option>
 	  		<option value="Travel_50">50% Travel</option>
 	  		<option value="Travel_100">Road Warrior</option>
 	  	</select>
+	  	<strong>Hours&nbsp;</strong>
+	  	<select class="work" name="Hours">
+	  		<option value="Part-Time">Part-Time</option>
+	  		<option value="Full-Time">Full-Time</option>
+	  	</select>
+	  	<strong>Status&nbsp;</strong>
+	  	<select class="work" name="Hours">
+	  		<option value="Employee">Employee</option>
+	  		<option value="Contractor">Contractor</option>
+	  	</select>
 	  </fieldset>
+	  <ul>
+			<li class="buttons">
+				<input type="submit" value="Upload"/>
+				<input type="reset" value="Start Over"/>
+			</li>
+		</ul>
   </div>
   <div class="floatbox side grayRight"></div>
   <footer>
