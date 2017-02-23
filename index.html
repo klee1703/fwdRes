@@ -5,11 +5,15 @@
 	<meta charset="utf-8">
 	<meta description="Test, resume">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Oswald|Sansita|Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Oswald|Sansita|Ubuntu" rel="stylesheet">
+	<script type="text/javascript" src="main.js" ></script> 
 </head>
 <body>
-  <div class="floatbox side grayLeft"></div>
-  <div class="floatbox middle creme">
+  <div class="floatbox side">&nbsp;</div>
+  <div class="floatbox middle white">
+	  <header>
+ 			<h1>Curriculum Vitae</h1>
+	  </header>
 	  <nav>
 	    <ul class="centered_nav">
 	      <li class="inline" id="home_id">
@@ -34,9 +38,6 @@
 	      </li>
 	    </ul>
 	  </nav>
-	  <header>
- 			<h1>Curriculum Vitae</h1>
-	  </header>
 	  <fieldset class="contacts">
 	  	<legend>Contact Info</legend>
 	  	<ul class="contact_info">
@@ -46,114 +47,131 @@
 	  		<li><strong>Address:</strong> 2110 Woodwind Dr., Encinitas CA 92024</li>
  			</ul>
 		</fieldset>
-		<fieldset class="skills">
-			<legend>General</legend>
-	  		<ul class="inputs">
-	  			<li class="clear">
-			 			<strong>Desired Salary:</strong>
-			 			<br>
-			 			<input class="formInputs" type="text" id="salary_id" name="salary"></input>
-	  			</li>
-	  			<li class="clear">
-			 			<strong>Education:</strong>
-			 			<br>
-			 			<input class="formInputs" type="text" name="education" id="education_id" list="educationLevel">
-			 			</input>
-			  		<datalist id="educationLevel">
-			  			<option value="High School"></option>
-			  			<option value="Bachelors Degree"></option>
-			  			<option value="Masters Degree"></option>
-			  			<option value="PhD"></option>
-			  		</datalist>
-	  			</li>
-	  			<li class="clear">
-			  		<strong>Comments:</strong>
-			  		<br>
-			  		<textarea class="formInputs" name="comments" id="comments_id" placeholder="Write comments here">			
-			  		</textarea>
-	  			</li>
-	  		</ul>	  			
-		</fieldset>
 	  <section class="formInputs">
-	  	<form action="*" method="post">
+	  	<form name="cvForm" action="*" method="post">
+				<fieldset class="skills">
+					<legend>General</legend>
+			  		<ul>
+			  			<li class="inputs">
+					 			<strong>Position:</strong>
+					 			<br>
+					 			<input class="formInputs" type="text" id="position_id" name="position" required="true"></input>
+			  			</li>
+			  			<li class="inputs">
+					 			<strong>Desired Salary:</strong>
+					 			<br>
+					 			<input class="formInputs" type="text" id="salary_id" name="salary" required="true"></input>
+			  			</li>
+			  			<li class="inputs">
+					 			<strong>Education:</strong>
+					 			<br>
+					 			<input class="formInputs" type="text" name="education" id="education_id" list="educationLevel" required="true">
+					 			</input>
+					  		<datalist id="educationLevel">
+					  			<option value="High School"></option>
+					  			<option value="Bachelors Degree"></option>
+					  			<option value="Masters Degree"></option>
+					  			<option value="PhD"></option>
+					  		</datalist>
+			  			</li>
+			  			<li class="inputs">
+					  		<strong>Comments:</strong>
+					  		<br>
+					  		<textarea class="formInputs" name="comments" id="comments_id" placeholder="Write comments here">			
+					  		</textarea>
+			  			</li>
+			  		</ul>	  			
+				</fieldset>
+			  <fieldset class="skills">
+			  	<legend>Technical Skills</legend>
+			  	<strong>Programming Languages</strong>
+			  	<ul>
+			  		<li>
+			  			<label class="selection">Java</label>
+			  			<input class="work" id="java_id" type="checkbox" name="languages" value="Java">
+			  			</input>
+			  		</li>
+			  		<li>
+			  			<label class="selection">Swift</label>
+			  			<input class="work" id="swift_id" type="checkbox" name="languages" value="Swift">
+			  			</input>
+			  		</li>
+			  		<li>
+			  			<label class="selection">C Family</label>
+			  			<input class="work" id="c_id" type="checkbox" name="languages" value="C">
+			  			</input>
+			  		</li>
+			  		<li>
+			  			<label class="selection">None</label>
+			  			<input class="work" id="lnone_id" type="checkbox" name="languages" value="None">
+			  			</input>
+			  		</li>
+			  	</ul>
+			  	<div style="clear: both;">
+				  	<strong>Web Design</strong>
+				  	<ul>
+				  		<li>
+				  			<label class="selection">HTML</label>
+				  			<input class="work" id="html_id" type="checkbox" name="webDev" value="HTML">
+				  			</input>
+				  		</li>
+				  		<li>
+				  			<label class="selection">CSS</label>
+				  			<input class="work" id="css_id" type="checkbox" name="webDev" value="CSS">
+				  			</input>
+				  		</li>
+				  		<li>
+				  			<label class="selection">JavaScript
+				  			<input class="work" id="js_id" type="checkbox" name="webDev" value="JavaScript">
+				  			</input>
+				  		</li>
+				  		<li>
+				  			<label class="selection">jQuery
+				  			<input class="work" id="jQuery_id" type="checkbox" name="webDev" value="jQuery">
+				  			</input>
+				  		</li>
+			  		<li>
+			  			<label class="selection">None</label>
+			  			<input class="work" id="wnone_id" type="checkbox" name="webDev" value="None">
+			  			</input>
+			  		</li>
+				  	</ul>	  			
+			  	</div>
+			  </fieldset>	
+			  <fieldset class="skills">
+			  	<legend>Work Requirements</legend>
+			  	<strong>Travel&nbsp;</strong>
+			  	<select class="work" name="Travel">
+			  		<option value="No_Travel">Work From Home</option>
+			  		<option value="Travel_25">25% Travel</option>
+			  		<option value="Travel_50">50% Travel</option>
+			  		<option value="Travel_100">Road Warrior</option>
+			  	</select>
+			  	<strong>Hours&nbsp;</strong>
+			  	<select class="work" name="Hours">
+			  		<option value="Part-Time">Part-Time</option>
+			  		<option value="Full-Time">Full-Time</option>
+			  	</select>
+			  	<strong>Status&nbsp;</strong>
+			  	<select class="work" name="Hours">
+			  		<option value="Employee">Employee</option>
+			  		<option value="Contractor">Contractor</option>
+			  	</select>
+			  </fieldset>
+			  <ul>
+					<li class="buttons">
+						<input id="submit_id" type="submit" value="Upload" onclick="validateForm()">
+						</input>
+						<input type="reset" value="Start Over">
+						</input>
+					</li>
+				</ul>
 	  	</form>
 	  </section>
-	  <fieldset class="skills">
-	  	<legend>Technical Skills</legend>
-	  	<strong>Programming Languages</strong>
-	  	<ul>
-	  		<li>
-	  			<label class="selection">Java</label>
-	  			<input class="work" type="checkbox" name="Languages" value="Java">
-	  			</input>
-	  		</li>
-	  		<li>
-	  			<label class="selection">Swift</label>
-	  			<input class="work" type="checkbox" name="Languages" value="Swift">
-	  			</input>
-	  		</li>
-	  		<li>
-	  			<label class="selection">C Family</label>
-	  			<input class="work" type="checkbox" name="Languages" value="C">
-	  			</input>
-	  		</li>
-	  	</ul>
-	  	<div style="clear: both;">
-		  	<strong>Web Design</strong>
-		  	<ul>
-		  		<li>
-		  			<label class="selection">HTML</label>
-		  			<input class="work" type="checkbox" name="Languages" value="HTML">
-		  			</input>
-		  		</li>
-		  		<li>
-		  			<label class="selection">CSS</label>
-		  			<input class="work" type="checkbox" name="Languages" value="CSS">
-		  			</input>
-		  		</li>
-		  		<li>
-		  			<label class="selection">JavaScript
-		  			<input class="work" type="checkbox" name="Languages" value="JavaScript">
-		  			</input>
-		  		</li>
-		  		<li>
-		  			<label class="selection">jQuery
-		  			<input class="work" type="checkbox" name="Languages" value="jQuery">
-		  			</input>
-		  		</li>
-		  	</ul>	  			
-	  	</div>
-	  </fieldset>	
-	  <fieldset class="skills">
-	  	<legend>Work Requirements</legend>
-	  	<strong>Travel&nbsp;</strong>
-	  	<select class="work" name="Travel">
-	  		<option value="No_Travel">Work From Home</option>
-	  		<option value="Travel_25">25% Travel</option>
-	  		<option value="Travel_50">50% Travel</option>
-	  		<option value="Travel_100">Road Warrior</option>
-	  	</select>
-	  	<strong>Hours&nbsp;</strong>
-	  	<select class="work" name="Hours">
-	  		<option value="Part-Time">Part-Time</option>
-	  		<option value="Full-Time">Full-Time</option>
-	  	</select>
-	  	<strong>Status&nbsp;</strong>
-	  	<select class="work" name="Hours">
-	  		<option value="Employee">Employee</option>
-	  		<option value="Contractor">Contractor</option>
-	  	</select>
-	  </fieldset>
-	  <ul>
-			<li class="buttons">
-				<input type="submit" value="Upload"/>
-				<input type="reset" value="Start Over"/>
-			</li>
-		</ul>
-  </div>
-  <div class="floatbox side grayRight"></div>
   <footer>
-  	<p><small>Copyright &copy; 2017</small></p>
+  	<p><small>Copyright &copy; 2017, Easy CV</small></p>
   </footer>
+  </div>
+  <div class="floatbox side">&nbsp;</div>
 </body>
 </html>

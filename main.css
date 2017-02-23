@@ -1,38 +1,54 @@
 body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-color: rgb(192,192,192);
+  background-image: linear-gradient(to bottom, rgb(155,155,192), white);
 }
+
+/** Base column styles */
 .floatbox {
+  position: relative;
   display: block;
-  min-height: 100vh;
   margin: 0;
   float: left;
   box-sizing: border-box;
 }
 .side {
-  width: 10vw;
+  width: 10%;
+  min-height: 100%;
 }
 .middle {
-  width: 80vw;
+  width: 80%;
+  min-height: 100%;
 }
-.grayRight {
-  background-color: rgb(192,192,192);
-  background-image: linear-gradient(to bottom right, rgb(192,192,192), white);
-}
-.grayLeft {
-  background-color: rgb(192,192,192);
-  background-image: linear-gradient(to bottom left, rgb(192,192,192), white);
-}
-.creme {
-  background-color: white;
+.white {
+  background-color: rgb(205,192,176);
   box-shadow: inset 0 0 10px #000;
 }
+
+/** Header styles */
 header {
   clear: both;
-  padding: 0.5em 0 0 1em;
+  padding: 0 0 0 1em;
+  margin: 0;
   font-family: 'Oswald', sans-serif;
 }
+
+/** Nav styles */
+ul.centered_nav {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+li.inline {
+  display: inline;
+  float: none;
+}
+
 ul {
   list-style-type: none;
   width: 100%;
@@ -40,7 +56,6 @@ ul {
   padding-left: 0;
 }
 ul.contact_info {
-  list-style-type: none;
   width: 100%;
   margin: 0;
   padding-top: 0;
@@ -54,54 +69,46 @@ ul.contact_info li {
   clear: both;
   margin: 1em;
 }
-ul.centered_nav {
-  list-style-type: none;
-  margin: 10px 0;
-  padding: 0;
-  text-align: center;
-}
-li.inline {
-  display: inline;
-  float: none;
-}
 li {
   float: left;
   padding: 0;
 }
-li.buttons {
-  clear: both;
-  margin: 0 1em;
-}
+
+/** Anchor styles */
 a {
   display: inline-block;
   text-align: center;
+  text-decoration: none;
   padding: 0.5em;
-  background-color: rgb(192,192,192);
+  color: black;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  background-color: rgb(224,224,224);
+  text-decoration: underline;
   border-radius: 0.5em;
   transition-property: background-color;
   transition-duration: 0.2s;
   transition-delay: 0.1s;
 }
-a:hover {
-  background-color: rgb(224,224,224);
-}
-a:active {
-  background-color: blue;
-}
-a:visited {
-}
-a:focus {
-  background-color: rgb(160,160,160);
-}
+
 strong {
   font-family: 'Sansita', sans-serif;
 }
+
 .centered_nav {
   margin: 1em auto;
   font-family: 'Ubuntu', sans-serif;
 }
+
+/** Forms */
 .formInputs {
-  width: 50vw;
+  width: 100%;
   padding-right: 0;
   margin-right: 0;
   border-width: 2px;
@@ -110,7 +117,7 @@ strong {
 .inputs {
   clear: both;
   margin: 0;
-  width: 100%;
+  width: 50%;
 }
 #educationLevel {
   padding-bottom: 0;
@@ -142,11 +149,19 @@ input.aligned {
 .clear {
   clear: both;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+
+/** Form input styles */
+li.buttons {
+  clear: both;
+  margin: 0 1em;
+}
+li.buttons input {
+  background-color: rgb(155,155,192);
+  border-radius: 0.5em;
+  padding: 0 5em;
+}
+li.buttons input:hover {
+  background-color: rgb(224,224,224);
 }
 .skills {
   clear: both;
@@ -155,4 +170,12 @@ footer {
 .work {
   display: inline-block;
   margin-right: 1.0em;
+}
+
+/** Footer styles */
+footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0 0 0;
 }
