@@ -13,16 +13,20 @@ body {
   position: relative;
   display: block;
   margin: 0;
+  padding: 0;
   float: left;
   box-sizing: border-box;
 }
 .side {
   width: 10%;
   min-height: 100%;
+  background-image: 
 }
 .middle {
   width: 80%;
   min-height: 100%;
+  background-image: url(images/paper.jpg);
+  background-size: contain;
 }
 .white {
   background-color: rgb(205,192,176);
@@ -36,11 +40,14 @@ header {
   margin: 0;
   font-family: 'Oswald', sans-serif;
 }
+header h1 {
+  margin: 0 auto;
+}
 
 /** Nav styles */
 ul.centered_nav {
   list-style-type: none;
-  margin: 10px 0;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -97,13 +104,19 @@ a:hover {
   transition-delay: 0.1s;
 }
 
-strong {
-  font-family: 'Sansita', sans-serif;
-}
-
 .centered_nav {
   margin: 1em auto;
   font-family: 'Ubuntu', sans-serif;
+}
+
+/** Elements */
+strong {
+  font-family: 'Sansita', sans-serif;
+}
+legend {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  padding: 0 0.5em;
 }
 
 /** Forms */

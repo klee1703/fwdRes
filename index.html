@@ -26,29 +26,45 @@
 	          About
 	        </a>
 	      </li>
-	      <li class="inline" id="contact_id">
-	        <a href="#">
-	          Contact Us
-	        </a>
-	      </li>
 	      <li class="inline" id="explore_id">
 	        <a href="#">
 	          Explore
 	        </a>
 	      </li>
+	      <li class="inline" id="contact_id">
+	        <a href="#">
+	          Contact Us
+	        </a>
+	      </li>
 	    </ul>
 	  </nav>
-	  <fieldset class="contacts">
-	  	<legend>Contact Info</legend>
-	  	<ul class="contact_info">
-	   		<li><strong>Name:</strong> Keith Lee</li>
-	  		<li><strong>Phone:</strong> 310-890-0373</li>
-	  		<li><strong>Email:</strong> klee@pellago.com</li>
-	  		<li><strong>Address:</strong> 2110 Woodwind Dr., Encinitas CA 92024</li>
- 			</ul>
-		</fieldset>
 	  <section class="formInputs">
-	  	<form name="cvForm" action="*" method="post">
+	  	<form name="cvForm" action="*" method="post" enctype="multipart/form-data">
+				<fieldset class="skills">
+					<legend>Contact Info</legend>
+			  	<ul>
+			  		<li class="inputs">
+							<strong>Name:</strong>
+							<br>
+							<input class="formInputs" type="text" id="name_id" name="name" required="true" value="Ada Lovelace"></input>
+			  		</li>
+			  		<li class="inputs">
+							<strong>Phone Number:</strong>
+							<br>
+							<input class="formInputs" type="text" id="phone_id" name="phone" required="true" value="444-123-4567"></input>
+			  			</li>
+			  		<li class="inputs">
+							<strong>Email:</strong>
+							<br>
+							<input class="formInputs" type="email" id="email_id" name="email" required="true" value="adal@programming.com"></input>
+			  		</li>
+			  		<li class="inputs">
+							<strong>Address:</strong>
+							<br>
+							<input class="formInputs" type="text" id="address_id" name="address" required="true" value="1 Infinite Loop, Cupertino CA 95014"></input>
+			  		</li>
+			  	</ul>	  			
+				</fieldset>
 				<fieldset class="skills">
 					<legend>General</legend>
 			  		<ul>
@@ -58,9 +74,9 @@
 					 			<input class="formInputs" type="text" id="position_id" name="position" required="true"></input>
 			  			</li>
 			  			<li class="inputs">
-					 			<strong>Desired Salary:</strong>
+					 			<strong>Desired Annual Salary:</strong>
 					 			<br>
-					 			<input class="formInputs" type="text" id="salary_id" name="salary" required="true"></input>
+					 			<input class="formInputs" type="text" pattern='^\d+(?:\.\d{0,2})$' id="salary_id" name="salary" required="true" value="100000.00"></input>
 			  			</li>
 			  			<li class="inputs">
 					 			<strong>Education:</strong>
@@ -79,6 +95,11 @@
 					  		<br>
 					  		<textarea class="formInputs" name="comments" id="comments_id" placeholder="Write comments here">			
 					  		</textarea>
+			  			</li>
+			  			<li class="inputs">
+					 			<strong>Resume <small><em>(optional)</em></small>:</strong>&nbsp;
+					 			<br>
+					 			<input class="formInputs" type="file" id="resume_id" name="resume" size="30"></input>
 			  			</li>
 			  		</ul>	  			
 				</fieldset>
@@ -108,7 +129,7 @@
 			  		</li>
 			  	</ul>
 			  	<div style="clear: both;">
-				  	<strong>Web Design</strong>
+				  	<strong>Web Development</strong>
 				  	<ul>
 				  		<li>
 				  			<label class="selection">HTML</label>

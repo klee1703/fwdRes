@@ -1,16 +1,18 @@
 // Form validation
 function validateForm() {
 	// Validate
-	var position = document.forms["cvForm"]["position"].value;
+	var position = document.getElementById("position_id").value;
 	if (position == "") {
 		alert("Position must be filled out");
 	}
 
 	// Validate input salary value
+	/**
 	var salary = document.forms["cvForm"]["salary"].value;
     if (isNaN(salary) || (salary < 1) ) {
 		alert("Please provide a valid Desired Salary");
     }
+    */
 
 	// Validate programming language(s)
 	if (!document.getElementById("java_id").checked &&
