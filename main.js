@@ -1,24 +1,22 @@
 // Form validation
 function validateForm() {
-	// Validate
+	// Validate position
 	var position = document.getElementById("position_id").value;
 	if (position == "") {
 		alert("Position must be filled out");
 	}
 
 	// Validate input salary value
-	/**
 	var salary = document.forms["cvForm"]["salary"].value;
     if (isNaN(salary) || (salary < 1) ) {
 		alert("Please provide a valid Desired Salary");
     }
-    */
 
 	// Validate programming language(s)
-	if (!document.getElementById("java_id").checked &&
-		!document.getElementById("swift_id").checked &&
-		!document.getElementById("c_id").checked &&
-		!document.getElementById("lnone_id").checked) {
+	if (!$("#java_id").checked &&
+		!$("#swift_id").checked &&
+		!$("#c_id").checked &&
+		!$("#lnone_id").checked) {
 		alert("Please check one or more of the Programming Languages boxes");
 	}
 
@@ -33,3 +31,6 @@ function validateForm() {
 
 	return false;
 }
+
+// Wait until DOM is loaded
+$(document).ready(validateForm);
