@@ -13,19 +13,19 @@ function validateForm() {
     }
 
 	// Validate programming language(s)
-	if (!$("#java_id").checked &&
-		!$("#swift_id").checked &&
-		!$("#c_id").checked &&
-		!$("#lnone_id").checked) {
+	if (($("#java_id").checked == false) &&
+		($("#swift_id").checked == false) &&
+		($("#c_id").checked == false) &&
+		($("#lnone_id").checked == false)) {
 		alert("Please check one or more of the Programming Languages boxes");
 	}
 
 	// Validate web development
-	if (!document.getElementById("html_id").checked &&
-		!document.getElementById("css_id").checked &&
-		!document.getElementById("js_id").checked &&
-		!document.getElementById("jQuery_id").checked &&
-		!document.getElementById("wnone_id").checked) {
+	if ((document.getElementById("html_id").checked == false) &&
+		(document.getElementById("css_id").checked == false) &&
+		(document.getElementById("js_id").checked == false) &&
+		(document.getElementById("jQuery_id").checked == false) &&
+		(document.getElementById("wnone_id").checked == false)) {
 		alert("Please check one or more of the Web Design boxes");
 	}
 
