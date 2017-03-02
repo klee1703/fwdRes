@@ -164,10 +164,6 @@ label.labelAligned {
   padding-left: 0;
   font-family: 'Sansita', sans-serif;
 }
-label.selection {
-  font-family: 'Architects Daughter', cursive;
-  font-weight: normal;
-}
 input.aligned {
   width: 50em;
   height: 2em;
@@ -184,13 +180,32 @@ input.aligned {
   li.cboxes {
     display: block;
     float: none;
-    padding-left: 2em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+  }
+  label.selection {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: normal;
+    float: left;
+    padding-right: 1em;
+    margin-top: -3px;
+  }
+  select.work {
+    margin-bottom: 3px;
+    width: 10em;
   }
 }
 @media screen and (min-width: 1000px) {
   li.cboxes {
     display: inline;
     float: left;
+  }
+  label.selection {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: normal;
+  }
+  select.work {
+    width: 10em;
   }
 }
 
@@ -221,15 +236,14 @@ li.buttons input:hover {
   .work {
     display: inline-block;
     margin-right: 1.0em;
-    width: 125px;
+    width: auto;
   }
 }
 @media screen and (max-width: 1000px) {
   .work {
     display: block;
     margin-right: 1.0em;
-    margin-bottom: 1em;
-    width: 125px;
+    width: auto;
   }
 }
 
