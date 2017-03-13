@@ -20,7 +20,7 @@ body {
 }
 @media screen and (min-width: 580px) {
   .side {
-    width: 10%;
+    width: 12.5%;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -30,12 +30,14 @@ body {
     content: "\200B";
   }
   .middle {
-    width: 80%;
+    width: 75%;
     min-height: 100%;
     margin: 0;
     padding: 0;
     background-image: url(images/paper.jpg);
     background-size: cover;
+    border: 3px solid white;
+    border-radius: 10px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -235,6 +237,8 @@ li.buttons input:hover {
 .skills {
   clear: both;
   margin: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 @media screen and (min-width: 1000px) {
   .work {
