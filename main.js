@@ -1,5 +1,5 @@
 // Form validation
-function validateForm() {
+function validateForm(event) {
 	isValid = true;
 
 	// Validate position
@@ -36,7 +36,12 @@ function validateForm() {
 	}
 
 	if (isValid) {
-		return confirm("Do you want to submit your CV?");
+		if (confirm("Do you want to submit your CV?")) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 	else {
 		return false;

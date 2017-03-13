@@ -48,22 +48,22 @@
 			  		<li class="inputs">
 							<strong>Name:</strong>
 							<br>
-							<input class="formInputs" type="text" id="name_id" name="name" required="true" value="Ada Lovelace"></input>
+							<input class="formInputs" type="text" id="name_id" name="name" required="true" placeholder="Ada Lovelace"></input>
 			  		</li>
 			  		<li class="inputs">
 							<strong>Phone Number:</strong>
 							<br>
-							<input class="formInputs" type="text" id="phone_id" name="phone" required="true" value="444-123-4567"></input>
+							<input class="formInputs" type="text" id="phone_id" name="phone" required="true" placeholder="444-123-4567"></input>
 			  			</li>
 			  		<li class="inputs">
 							<strong>Email:</strong>
 							<br>
-							<input class="formInputs" type="email" id="email_id" name="email" required="true" value="adal@programming.com"></input>
+							<input class="formInputs" type="email" id="email_id" name="email" required="true" placeholder="adal@programming.com"></input>
 			  		</li>
 			  		<li class="inputs">
 							<strong>Address:</strong>
 							<br>
-							<input class="formInputs" type="text" id="address_id" name="address" required="true" value="1 Infinite Loop, Cupertino CA 95014"></input>
+							<input class="formInputs" type="text" id="address_id" name="address" required="true" placeholder="1 Infinite Loop, Cupertino CA 95014"></input>
 			  		</li>
 			  	</ul>	  			
 				</fieldset>
@@ -73,17 +73,17 @@
 			  			<li class="inputs">
 					 			<strong>Position:</strong>
 					 			<br>
-					 			<input class="formInputs" type="text" id="position_id" name="position" required="true" value="Software Engineer"></input>
+					 			<input class="formInputs" type="text" id="position_id" name="position" required="true" placeholder="Software Engineer"></input>
 			  			</li>
 			  			<li class="inputs">
 					 			<strong>Desired Annual Salary:</strong>
 					 			<br>
-					 			<input class="formInputs" type="text" pattern='^\d+(?:\.\d{0,2})$' id="salary_id" name="salary" required="true" value="100000.00"></input>
+					 			<input class="formInputs" type="text" pattern='^\d+(?:\.\d{0,2})$' id="salary_id" name="salary" required="true" placeholder="100000.00"></input>
 			  			</li>
 			  			<li class="inputs">
 					 			<strong>Education:</strong>
 					 			<br>
-					 			<input class="formInputs" type="text" name="education" id="education_id" list="education_id" required="true" value="Bachelors Degree">
+					 			<input class="formInputs" type="text" name="education" id="education_id" list="education_id" required="true" placeholder="Bachelors Degree">
 					 			</input>
 					  		<datalist id="education_id">
 					  			<option value="High School"></option>
@@ -186,7 +186,7 @@
 			  </fieldset>
 			  <ul>
 					<li class="buttons">
-						<input id="submit_id" type="submit" value="Upload Data" onclick="validateForm()">
+						<input id="submit_id" type="submit" value="Upload Data" onclick="return validateForm(event)">
 						</input>
 						<input type="reset" value="Start Over">
 						</input>
